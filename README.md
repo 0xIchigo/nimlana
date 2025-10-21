@@ -1,10 +1,10 @@
 # Solana BPF Programs with Nim + `sbpf-linker`
 
-Nimlana is a minimal template for building Solana BPF programs using Nim and [sbpf-linker](https://github.com/blueshift-gg/sbpf-linker).
+Nimlana is a minimal template for building Solana BPF programs using Nim and [`sbpf-linker`](https://github.com/blueshift-gg/sbpf-linker).
 
 This is unaudited and experimental code, as well as my first time using Nim, so you're an absolute nimrod if you use this in prod. This is meant as a proof of concept for educational purposes only.
 
-Shoutout to the chads at [Blueshift](https://blueshift.gg/), and [Claire](https://x.com/clairefxyz) for writing `sbpf-linker`. This was heavily inspired by [Clana](https://github.com/Rhovian/clana), since Nim can compile to C.
+Shoutout to the chads at [Blueshift](https://blueshift.gg/), especially [Claire](https://x.com/clairefxyz) for writing `sbpf-linker`. This was heavily inspired by [Clana](https://github.com/Rhovian/clana), since Nim can compile to C.
 
 ## Prerequisites
 
@@ -86,7 +86,7 @@ Nim's runtime is completely disabled for sBPF compatibility:
 
 ### 3. Inline String Data
 
-To prevent sbpf-linker from stripping `.rodata`, we inline strings as byte arrays:
+To prevent `sbpf-linker` from stripping `.rodata`, we inline strings as byte arrays:
 
 ```nim
 var hello_msg: array[15, uint8] = [
