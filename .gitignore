@@ -1,0 +1,18 @@
+# Nim build artifacts
+nimcache/
+*.bc
+
+# Build output
+build/
+*.so
+
+# Cargo/Rust
+target/
+Cargo.lock
+
+# Temporary files
+*.tmp
+*.log
+
+# LLVM library symlinks
+.cargo/lib/

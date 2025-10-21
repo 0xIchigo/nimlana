@@ -1,0 +1,22 @@
+[package]
+name = "nimlana"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A minimal proof of concept for for building Solana BPF programs using Nim and sbpf-linker"
+authors = ["0xIchigo <0xIchigo@protonmail.com>"]
+readme = "README.md"
+
+[[test]]
+name = "test_entrypoint"
+path = "test/test_entrypoint.rs"
+
+[dev-dependencies]
+litesvm = "0.8.1"
+solana-message = "3.0"
+solana-pubkey = "3.0"
+solana-keypair = "3.0"
+solana-signer = "3.0"
+solana-transaction = "3.0"
+solana-instruction = "3.0"
+solana-address = "1.0"
